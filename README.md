@@ -1,5 +1,5 @@
 # onwatuf
-TUF firmware file format dissection for ONWA Marine GPS Plotters (MK1)
+TUF firmware file format dissection for [ONWA Marine](http://www.onwamarine.com/support-and-download/) GPS Plotters (MK1)
 
 ONWA Marine GPS plotters from the older MK1 series (like KCombo7) use a "TUF" firmware update format, which is basically a nunch of deflated files smushed together.
 
@@ -11,7 +11,7 @@ Additionally, there is a simple Python script based on Kaitai to extract the fil
 
 ## Usage
 
-I case onwa_tuf.ksy was changed, regenerate onwa_tuf.py by `kaitai-struct-compiler --target python onwa_tuf.ksy`
+I case `onwa_tuf.ksy` was changed, regenerate with `kaitai-struct-compiler --target python onwa_tuf.ksy`
 
 ### File extraction
 ```
