@@ -1,7 +1,7 @@
 # onwatuf
 TUF firmware file format dissection for [ONWA Marine](http://www.onwamarine.com/support-and-download/) GPS Plotters (MK1)
 
-ONWA Marine GPS plotters from the older MK1 series (like KCombo7) use a "TUF" firmware update format, which is basically a nunch of deflated files smushed together.
+ONWA Marine GPS plotters from the older MK1 series (like KCombo7) use a "TUF" firmware update format, which is basically a bunch of deflated files concatenated together.
 
 ![Graphviz display of TUF file format](tuf.png)
 
