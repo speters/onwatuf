@@ -34,6 +34,7 @@ optional arguments:
   * Plotter is based on S3C2416X ARM9 system running Linux 2.16
   * `*.sh` bash shell scripts on MMC/SD-card will be executed during the update - the perfect chance to gain full control
   * later models use a different encrypted or at least obfuscated `xUF` file format, which is not covered here
+  * GUI is built with [FTK - funny toolkit cross-platform GUI](https://github.com/xianjimli/ftk/)
   
 ### Possible "attacks"
  * Write a shell script which makes a complete dump of the firmware to MMC/SD-card. The mountpoint `/KP6XX/MMC` might differ, so check for mounted filesystems instead of a hardcoded path.
