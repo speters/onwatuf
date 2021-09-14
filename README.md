@@ -9,8 +9,29 @@ In this repository, you will find a basic file format description as a [Kaitai](
 
 Additionally, there is a simple Python script based on Kaitai to extract the files from the TUF firmware update file.
 
+## Usage
+
+I case onwa_tuf.ksy was changed, regenerate onwa_tuf.py by `kaitai-struct-compiler --target python onwa_tuf.ksy`
+
+### File extraction
+```
+usage: tuf.py [-h] [-o OUTPUT_DIR] [-w] firmware_update_file.tuf
+
+TUF firmware file extractor
+
+positional arguments:
+  firmware_update_file.tuf
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        output directory
+  -w, --write           actually write files (default: only list)
+
+```
+
 ## Observations
-  * Plotter is based on ARM-32 system running Linux 2.16
+  * Plotter is based on S3C2416X ARM9 system running Linux 2.16
   * `*.sh` bash shell scripts on MMC/SD-card will be executed during the update - the perfect chance to gain full control
   * later models use a different encrypted or at least obfuscated `xUF` file format, which is not covered here
   
