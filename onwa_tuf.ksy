@@ -1,5 +1,5 @@
 meta:
-  id: tuf
+  id: onwa_tuf
   file-extension: tuf
   title: ONWA Marine GPS Plotter firmware TUF update
   endian: le
