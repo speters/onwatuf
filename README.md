@@ -11,7 +11,7 @@ Additionally, there is a simple Python script based on Kaitai to extract the fil
 
 ## Usage
 
-I case `onwa_tuf.ksy` was changed, regenerate with `kaitai-struct-compiler --target python onwa_tuf.ksy`
+In case `onwa_tuf.ksy` was changed, regenerate with `kaitai-struct-compiler --target python onwa_tuf.ksy`
 
 ### File extraction
 ```
