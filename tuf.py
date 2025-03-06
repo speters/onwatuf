@@ -14,7 +14,11 @@ args = parser.parse_args()
 
 prefix = args.output_dir
 
-tuf = OnwaTuf.from_file(args.tuffile[0])
+try:
+    tuf = OnwaTuf.from_file(args.tuffile[0])
+except: # kaitaistruct.ValidationNotEqualError:
+    print("Error: file \"{}\" is not a valid TUF MKI file".format(args.tuffile[0]))
+    exit(1)
 
 for i, tufentry in enumerate(tuf.tuf_entries):
     if (tufentry.file_len + tufentry.file_len2) == 0:
